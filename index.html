@@ -1,185 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles/reset.css" />
-  <link rel="stylesheet" href="styles/generic.css" />
-  <link rel="stylesheet" href="styles/index.css" />
-  <style>
-    #hero {
-      background-image: url(assets/camera_roll/bar_island.jpg);
-      animation: background-rotation 10s infinite steps(1);
-    }
-
-    @keyframes background-rotation {
-      0% {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/generic.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <style>
+      #hero {
         background-image: url(assets/camera_roll/bar_island.jpg);
+        animation: background-rotation 10s infinite steps(1);
       }
 
-      33% {
-        background-image: url(assets/camera_roll/steak.jpg);
-      }
+      @keyframes background-rotation {
+        0% {
+          background-image: url(assets/camera_roll/bar_island.jpg);
+        }
 
-      66% {
-        background-image: url(assets/camera_roll/wine_cellar.jpg);
-      }
+        33% {
+          background-image: url(assets/camera_roll/steak.jpg);
+        }
 
-      100% {
-        background-image: url(assets/camera_roll/bar_island.jpg);
-      }
-    }
-  </style>
-  <title>Meat Me Inside | Best Steakhouse in Manila</title>
-</head>
+        66% {
+          background-image: url(assets/camera_roll/wine_cellar.jpg);
+        }
 
-<body>
-  <nav>
-    <div class="container">
-      <img src="assets/logo-transparent.png" alt="Meat Me Inside Logo" />
-      <ul id="nav-links">
-        <input type="checkbox" id="check" />
-        <span class="menu">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-        </span>
-        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <section id="hero">
-      <div id="dark-overlay"></div>
-      <div id="hero-content" class="container">
+        100% {
+          background-image: url(assets/camera_roll/bar_island.jpg);
+        }
+      }
+    </style>
+    <title>Meat Me Inside | Best Steakhouse in Manila</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
         <img src="assets/logo-transparent.png" alt="Meat Me Inside Logo" />
-        <h1>MEAT ME INSIDE</h1>
-        <hr />
-        <h4>EST. 2025</h4>
-        <a href="menu.html"><button>CHECK OUR MENU</button></a>
+        <ul id="nav-links">
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times"></i
+            ></label>
+          </span>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </ul>
       </div>
-    </section>
-    <section id="awards" class="dark-bg">
-      <div class="container">
-        <div class="section-header">
+    </nav>
+    <main>
+      <section id="hero">
+        <div id="dark-overlay"></div>
+        <div id="hero-content" class="container">
+          <img src="assets/logo-transparent.png" alt="Meat Me Inside Logo" />
+          <h1>MEAT ME INSIDE</h1>
           <hr />
-          <h2>AWARDS</h2>
-          <hr />
+          <h4>EST. 2025</h4>
+          <a href="menu.html"><button>CHECK OUR MENU</button></a>
         </div>
-        <div id="marquee">
-          <div class="item award1">
-            <img src="assets/awards/st-pellegrino&aequa-panna.png" alt="Sample Award" />
-          </div>
-          <div class="item award2">
-            <img src="assets/awards/le-grandes-tables-du-monde.png" alt="Sample Award" />
-          </div>
-          <div class="item award3">
-            <img src="assets/awards/wine-spectator-award-of-excellence.png" alt="Sample Award" />
-          </div>
-          <div class="item award4">
-            <img src="assets/awards/michelin-2-star.png" alt="Sample Award" />
-          </div>
-          <div class="item award5">
-            <img src="assets/awards/empresa-certificada.png" alt="Sample Award" />
-          </div>
-          <div class="item award6">
-            <img src="assets/awards/relais&chateaux.png" alt="Sample Award" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="container">
-        <div id="about-left">
-          <img src="assets/about.jpg" alt="Let them cook!">
-        </div>
-        <div id="about-right">
+      </section>
+      <section id="awards" class="dark-bg">
+        <div class="container">
           <div class="section-header">
             <hr />
-            <h2>About</h2>
+            <h2>AWARDS</h2>
             <hr />
           </div>
-          <section id="about-text">
-            <h3>MEAT ME INSIDE</h3>
-            <p>
-              Rated as one of the best steakhouses in Manila, Meat Me Inside
-              currently has twenty-one locations worldwide. We pride ourselves
-              in our renowned USDA Prime Black Angus Steak, fresh seafood, and
-              award-winning wine cellar.
-            </p>
-          </section>
-          <a href="about.html"><button>READ MORE</button></a>
+          <div id="marquee">
+            <div class="item award1">
+              <img
+                src="assets/awards/st-pellegrino&aequa-panna.png"
+                alt="Sample Award"
+              />
+            </div>
+            <div class="item award2">
+              <img
+                src="assets/awards/le-grandes-tables-du-monde.png"
+                alt="Sample Award"
+              />
+            </div>
+            <div class="item award3">
+              <img
+                src="assets/awards/wine-spectator-award-of-excellence.png"
+                alt="Sample Award"
+              />
+            </div>
+            <div class="item award4">
+              <img src="assets/awards/michelin-2-star.png" alt="Sample Award" />
+            </div>
+            <div class="item award5">
+              <img
+                src="assets/awards/empresa-certificada.png"
+                alt="Sample Award"
+              />
+            </div>
+            <div class="item award6">
+              <img src="assets/awards/relais&chateaux.png" alt="Sample Award" />
+            </div>
+          </div>
         </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div id="about-left">
+            <img src="assets/about.jpg" alt="Let them cook!" />
+          </div>
+          <div id="about-right">
+            <div class="section-header">
+              <hr />
+              <h2>About</h2>
+              <hr />
+            </div>
+            <section id="about-text">
+              <h3>MEAT ME INSIDE</h3>
+              <p>
+                Rated as one of the best steakhouses in Manila, Meat Me Inside
+                currently has twenty-one locations worldwide. We pride ourselves
+                in our renowned USDA Prime Black Angus Steak, fresh seafood, and
+                award-winning wine cellar.
+              </p>
+            </section>
+            <a href="about.html"><button>READ MORE</button></a>
+          </div>
+        </div>
+      </section>
+      <section id="menu">
+        <div class="container">
+          <div class="section-header">
+            <hr />
+            <h2>Menu</h2>
+            <hr />
+          </div>
+          <div class="menu-grid">
+            <div class="menu-card">
+              <img src="assets/menu/RIBEYE-12OZ-GRILLED-SHRIMP.webp" alt="" />
+              <div class="gradient-dark-overlay"></div>
+              <div class="menu-text">
+                <h5>Ribeye 12oz & Grilled Shrimp</h5>
+                <p>
+                  A thick, juicy 12oz ribeye, perfectly seared for a caramelized
+                  crust and bursting with rich, buttery flavor. Paired with
+                  smoky, flame-grilled shrimp brushed with garlic butter, this
+                  surf-and-turf masterpiece melts in your mouth with every bite.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="assets/menu/BACON-CHEESEBURGER.webp" alt="" />
+              <div class="gradient-dark-overlay"></div>
+              <div class="menu-text">
+                <h5>Bacon Cheeseburger</h5>
+                <p>
+                  A juicy, flame-grilled beef patty dripping with savory
+                  goodness, topped with crispy, smoky bacon and oozing melted
+                  cheddar. Sandwiched between a toasted brioche bun, every bite
+                  is a perfect balance of crunch, creaminess, and pure burger
+                  bliss.
+                </p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="assets/menu/GRILLED-SALMON.webp" alt="" />
+              <div class="gradient-dark-overlay"></div>
+              <div class="menu-text">
+                <h5>Grilled Salmon</h5>
+                <p>
+                  Tender, flaky salmon fillet kissed by the flames, with a
+                  crispy, golden crust and a melt-in-your-mouth center. Brushed
+                  with buttery herbs and a hint of citrus, every bite is a
+                  perfect blend of smoky, savory, and fresh flavors.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="menu.html"><button>CHECK OUR MENU</button></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"
+          ><img src="assets/facebook.png" alt="Facebook"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="assets/instagram.png" alt="Instagram"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="assets/whatsapp.png" alt="WhatsApp"
+        /></a>
       </div>
-    </section>
-    <section id="menu">
-      <div class="container">
-        <div class="section-header">
-          <hr />
-          <h2>Menu</h2>
-          <hr />
-        </div>
-        <div class="menu-grid">
-          <div class="menu-card">
-            <img src="assets/menu/RIBEYE-12OZ-GRILLED-SHRIMP.webp" alt="" />
-            <div class="gradient-dark-overlay"></div>
-            <div class="menu-text">
-              <h5>Ribeye 12oz & Grilled Shrimp</h5>
-              <p>
-                A thick, juicy 12oz ribeye, perfectly seared for a caramelized
-                crust and bursting with rich, buttery flavor. Paired with smoky,
-                flame-grilled shrimp brushed with garlic butter, this
-                surf-and-turf masterpiece melts in your mouth with every bite.
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <img src="assets/menu/BACON-CHEESEBURGER.webp" alt="" />
-            <div class="gradient-dark-overlay"></div>
-            <div class="menu-text">
-              <h5>Bacon Cheeseburger</h5>
-              <p>
-                A juicy, flame-grilled beef patty dripping with savory goodness,
-                topped with crispy, smoky bacon and oozing melted cheddar.
-                Sandwiched between a toasted brioche bun, every bite is a
-                perfect balance of crunch, creaminess, and pure burger bliss.
-              </p>
-            </div>
-          </div>
-          <div class="menu-card">
-            <img src="assets/menu/GRILLED-SALMON.webp" alt="" />
-            <div class="gradient-dark-overlay"></div>
-            <div class="menu-text">
-              <h5>Grilled Salmon</h5>
-              <p>
-                Tender, flaky salmon fillet kissed by the flames, with a crispy,
-                golden crust and a melt-in-your-mouth center. Brushed with
-                buttery herbs and a hint of citrus, every bite is a perfect
-                blend of smoky, savory, and fresh flavors.
-              </p>
-            </div>
-          </div>
-        </div>
-        <a href="menu.html"><button>CHECK OUR MENU</button></a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="social-icons">
-      <a href="#" class="social-icon"><img src="assets/facebook.png" alt="Facebook" /></a>
-      <a href="#" class="social-icon"><img src="assets/instagram.png" alt="Instagram" /></a>
-      <a href="#" class="social-icon"><img src="assets/whatsapp.png" alt="WhatsApp" /></a>
-    </div>
-    &copy; 2025 Meat Me Inside. All rights reserved.
-  </footer>
-</body>
-
+      &copy; 2025 Meat Me Inside. All rights reserved.
+    </footer>
+  </body>
 </html>
