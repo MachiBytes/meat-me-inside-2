@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --dark-color: #0f0f0f;
+  --light-color: #fbfefc;
+  --accent-color: #da434b;
+  --gray-color: #c5c0c0;
+  --award-count: 6;
+  --animation-duration: 15s;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--light-color);
+  z-index: 5;
+}
+
+html {
+  font-size: 14px; /* Explicitly setting the value of rem */
+
+  @media (min-width: 900px) {
+    font-size: 16px;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 900;
+}
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+h6 {
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+#dark-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.gradient-dark-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  z-index: 2;
+  top: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 15, 15, 1) 50%,
+    rgba(15, 15, 15, 0.3) 75%,
+    rgba(15, 15, 15, 0) 100%
+  );
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+button {
+  padding: 0.6rem;
+  background-color: transparent;
+  border: var(--accent-color) 1px solid;
+  color: var(--accent-color);
+  border-radius: 0.2rem;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+nav .container {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 3rem;
+  height: 3rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+nav .menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  text-transform: uppercase;
+  transition: 0.15s ease-in-out;
+}
+
+.menu li a {
+  position: relative;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--light-color);
+  transition: 0.15s ease-in-out;
+}
+
+.menu li.active {
+  color: var(--accent-color);
+}
+
+.menu li.active a::after {
+  background-color: var(--accent-color);
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+.open-menu,
+.close-menu {
+  color: var(--light-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.open-menu {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 610px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--dark-color);
+    transition: all 0.2s ease-in-out;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked ~ .menu {right: 0;}
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+.dark-bg {
+  background-color: var(--dark-color);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+  background-color: transparent;
+}
+
+.section-header hr {
+  width: 5rem;
+  height: 2px;
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .social-icon img {
+  width: 2rem;
+  height: 2rem;
+}
