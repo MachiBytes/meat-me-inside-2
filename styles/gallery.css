@@ -1,0 +1,35 @@
+#gallery {
+    height: fit-content;
+
+    @media screen and (min-width: 768px) {
+        min-height: calc(100vh - 4rem);
+        
+    }
+}
+
+#gallery .container {
+    padding-top: 6rem;
+}
+
+#image-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+}
+
+#image-grid img {
+    width: 100%;
+    aspect-ratio: 5/3;
+    border-radius: 10px;
+}
