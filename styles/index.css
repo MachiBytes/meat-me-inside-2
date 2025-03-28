@@ -124,6 +124,7 @@
 }
 
 #about-left {
+    position: relative;
     display: none;
     
     @media (min-width: 768px) {
@@ -132,7 +133,9 @@
 }
 
 #about-left img {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: 80vh;
     border-radius: 10px;
 }
 
