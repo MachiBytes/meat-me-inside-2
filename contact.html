@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/generic.css" />
     <link rel="stylesheet" href="styles/contact.css" />
@@ -39,7 +43,52 @@
         </ul>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <section id="contact">
+        <div id="dark-overlay"></div>
+        <div class="container">
+          <div class="section-header">
+            <hr />
+            <h2>Contact</h2>
+            <hr />
+          </div>
+          <section id="content-grid">
+            <div id="map"></div>
+            <form class="contact-form">
+              <input type="email" id="email" placeholder="Your email" required />
+  
+              <input type="text" id="subject" placeholder="Subject" required />
+  
+              <textarea
+                id="message"
+                rows="10"
+                placeholder="Your message"
+                required
+              ></textarea>
+  
+              <button type="submit">Send</button>
+            </form>
+            <div id="contact-info">
+              <h5>Address</h5>
+              <p>
+                G/F, The Podium, 18 ADB Ave, Ortigas Center, <br />Mandaluyong,
+                1550 Metro Manila
+              </p>
+              <br />
+              <h5>Operation Hours</h5>
+              <p>Monday to Sunday | 6:00 A.M. to 12:00 A.M.</p>
+            </div>
+            <section id="contact-information">
+              <h5>Contacts</h5>
+              <p>service@meatmeinside.com</p>
+              <p>02-8532-6789</p>
+              <p>(+63) 917-123-4567</p>
+              <p>(+63) 998-765-4321</p>
+            </section>
+          </section>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="social-icons">
         <a href="#" class="social-icon"
@@ -54,5 +103,7 @@
       </div>
       &copy; 2025 Meat Me Inside. All rights reserved.
     </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="scripts/map.js"></script>
   </body>
 </html>

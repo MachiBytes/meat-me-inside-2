@@ -1,0 +1,52 @@
+#contact {
+  height: fit-content;
+
+  @media screen and (min-width: 768px) {
+    min-height: calc(100vh - 4rem);
+  }
+}
+
+#contact .container {
+  padding-top: 6rem;
+  background-color: var(--dark-color);
+}
+
+#content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#map {
+  width: 100%;
+  min-height: 20rem;
+}
+
+#contact-info p, #contact-information p {
+    line-height: 1.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+form input,
+form textarea {
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+form button {
+  margin: 1rem 0 3rem 0;
+}
