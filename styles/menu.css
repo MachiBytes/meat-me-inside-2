@@ -1,0 +1,41 @@
+#menu {
+    height: fit-content;
+
+    @media screen and (min-width: 768px) {
+        min-height: calc(100vh - 4rem);
+        
+    }
+}
+
+#menu .container {
+    padding-top: 6rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.menu-card {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-card img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
